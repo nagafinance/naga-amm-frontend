@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
-import { Heading, IconButton, Text, Flex, useModal } from '@pancakeswap-libs/uikit'
+import {IconButton} from '@naga-uikit/naga-uikit'
+import { Heading, Text, Flex, useModal } from 'naga-uikit'
 import SettingsModal from './SettingsModal'
 import RecentTransactionsModal from './RecentTransactionsModal'
 

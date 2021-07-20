@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react'
-import { CheckmarkCircleIcon, ErrorIcon, Flex, LinkExternal, Text, Modal, Button } from '@pancakeswap-libs/uikit'
+import { Button , LinkExternal } from '@naga-uikit/naga-uikit'
+import { CheckmarkCircleIcon, ErrorIcon, Flex, Text, Modal } from 'naga-uikit'
 import { useActiveWeb3React } from 'hooks'
 import { getEtherscanLink } from 'utils'
 import { isTransactionRecent, useAllTransactions } from 'state/transactions/hooks'

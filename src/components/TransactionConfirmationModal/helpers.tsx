@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
-import { Heading, IconButton, CloseIcon } from '@pancakeswap-libs/uikit'
+import {IconButton} from '@naga-uikit/naga-uikit'
+import { Heading, CloseIcon } from 'naga-uikit'
 import { AutoColumn, ColumnCenter } from '../Column'
 
 

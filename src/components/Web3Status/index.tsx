@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
 import { AbstractConnector } from '@web3-react/abstract-connector'
 import { UnsupportedChainIdError, useWeb3React } from '@web3-react/core'
-import { Button } from '@pancakeswap-libs/uikit'
+import { Button } from '@naga-uikit/naga-uikit'
 import { darken, lighten } from 'polished'
 import { Activity } from 'react-feather'
 import { useTranslation } from 'react-i18next'
@@ -31,8 +31,8 @@ const IconWrapper = styled.div<{ size?: number }>`
   align-items: center;
   justify-content: center;
   & > * {
-    height: ${({ size }) => (size ? `${size  }px` : '32px')};
-    width: ${({ size }) => (size ? `${size  }px` : '32px')};
+    height: ${({ size }) => (size ? `${size}px` : '32px')};
+    width: ${({ size }) => (size ? `${size}px` : '32px')};
   }
 `
 
@@ -59,7 +59,7 @@ const Web3StatusError = styled(Web3StatusGeneric)`
   }
 `
 
-const Web3StatusConnect = styled(Web3StatusGeneric)<{ faded?: boolean }>`
+const Web3StatusConnect = styled(Web3StatusGeneric) <{ faded?: boolean }>`
   background-color: ${({ theme }) => theme.colors.primaryDark};
   border: none;
   color: ${({ theme }) => theme.colors.primaryDark};
@@ -86,7 +86,7 @@ const Web3StatusConnect = styled(Web3StatusGeneric)<{ faded?: boolean }>`
     `}
 `
 
-const Web3StatusConnected = styled(Web3StatusGeneric)<{ pending?: boolean }>`
+const Web3StatusConnected = styled(Web3StatusGeneric) <{ pending?: boolean }>`
   background-color: ${({ pending, theme }) => (pending ? theme.colors.primary : theme.colors.invertedContrast)};
   border: 1px solid ${({ pending, theme }) => (pending ? theme.colors.primary : theme.colors.tertiary)};
   color: ${({ pending, theme }) => (pending ? '#FFFFFF' : theme.colors.text)};
@@ -94,7 +94,7 @@ const Web3StatusConnected = styled(Web3StatusGeneric)<{ pending?: boolean }>`
   :hover,
   :focus {
     background-color: ${({ pending, theme }) =>
-      pending ? darken(0.05, theme.colors.primary) : lighten(0.05, theme.colors.invertedContrast)};
+    pending ? darken(0.05, theme.colors.primary) : lighten(0.05, theme.colors.invertedContrast)};
 
     :focus {
       border: 1px solid
@@ -206,13 +206,13 @@ function Web3StatusInner() {
         <Text>{error instanceof UnsupportedChainIdError ? 'Wrong Network' : 'Error'}</Text>
       </Web3StatusError>
     )
-  } 
-    return (
-      <Web3StatusConnect id="connect-wallet" onClick={toggleWalletModal} faded={!account}>
-        <Text>{t('Connect to a wallet')}</Text>
-      </Web3StatusConnect>
-    )
-  
+  }
+  return (
+    <Web3StatusConnect id="connect-wallet" onClick={toggleWalletModal} faded={!account}>
+      <Text>{t('Connect to a wallet')}</Text>
+    </Web3StatusConnect>
+  )
+
 }
 
 export default function Web3Status() {

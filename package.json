@@ -1,5 +1,5 @@
 {
-  "name": "goose-frontend-amm",
+  "name": "naga-frontend-amm",
   "description": "AMM Interface",
   "homepage": ".",
   "private": true,
@@ -7,7 +7,7 @@
     "@crowdin/crowdin-api-client": "^1.8.16",
     "@ethersproject/experimental": "^5.0.1",
     "@pancakeswap-libs/sdk": "1.0.1",
-    "@pancakeswap-libs/uikit": "goosedefi/goose-uikit",
+    "@naga-uikit/naga-uikit": "NGen-Defi-Society/naga-uikit",
     "@popperjs/core": "^2.4.4",
     "@reach/dialog": "^0.10.3",
     "@reach/portal": "^0.10.3",
@@ -71,12 +71,20 @@
     "@pancakeswap-libs/eslint-config-pancake": "1.0.0",
     "@types/jest": "^26.0.20",
     "@types/testing-library__cypress": "^5.0.8",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.5",
     "cypress": "^4.11.0",
     "eslint": "^7.2.0",
     "prettier": "^2.1.2",
     "qs": "^6.9.4",
     "serve": "^11.3.0",
-    "start-server-and-test": "^1.11.0"
+    "start-server-and-test": "^1.11.0",
+    "@types/react": "^17.0.1",
+    "@types/react-router-dom": "^5.1.6",
+    "@types/react-transition-group": "^4.4.0",
+    "@types/styled-components": "^5.1.4",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2"
   },
   "resolutions": {
     "@walletconnect/web3-provider": "1.1.1-alpha.0"

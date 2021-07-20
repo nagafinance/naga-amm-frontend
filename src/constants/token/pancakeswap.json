@@ -11,10 +11,10 @@
   "keywords": ["pancake", "default"],
   "tokens": [
     {
-      "name": "Goose Golden Egg",
-      "symbol": "EGG",
-      "address": "0xF952Fc3ca7325Cc27D15885d37117676d25BfdA6",
-      "chainId": 56,
+      "name": "Naga Finance",
+      "symbol": "NAGA",
+      "address": "0x6a3e6259e5c7804eb23B8F579620fC7b2c83cd1d",
+      "chainId": 97,
       "decimals": 18
     },
     {

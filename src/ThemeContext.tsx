@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { ThemeProvider as SCThemeProvider } from 'styled-components'
-import { light, dark } from '@pancakeswap-libs/uikit'
+import { light, dark } from 'naga-uikit'
 
 const CACHE_KEY = 'IS_DARK'
 
@@ -17,15 +17,15 @@ const ThemeContextProvider: React.FC = ({ children }) => {
     return isDarkUserSetting ? JSON.parse(isDarkUserSetting) : false
   })
 
-  const handleSetup = useCallback(event=>{
-    if(event && event.data && typeof event.data === "string" && event.data.startsWith("[iFrameSizer]message:")){
+  const handleSetup = useCallback(event => {
+    if (event && event.data && typeof event.data === "string" && event.data.startsWith("[iFrameSizer]message:")) {
       const dataStr = event.data.substring("[iFrameSizer]message:".length);
       const data = JSON.parse(dataStr);
       console.log("data.isDark", data.isDark);
-      setIsDark(()=>data.isDark);
+      setIsDark(() => data.isDark);
     }
   }, []);
-  useEffect(()=>{
+  useEffect(() => {
     window.addEventListener("message", handleSetup);
     return () => {
       window.removeEventListener('message', handleSetup);
@@ -41,7 +41,7 @@ const ThemeContextProvider: React.FC = ({ children }) => {
 
   return (
     <ThemeContext.Provider value={{ isDark, toggleTheme }}>
-      <SCThemeProvider theme={isDark ? dark : light}>{children}</SCThemeProvider>
+      <SCThemeProvider theme={isDark ? dark : dark}>{children}</SCThemeProvider>
     </ThemeContext.Provider>
   )
 }
