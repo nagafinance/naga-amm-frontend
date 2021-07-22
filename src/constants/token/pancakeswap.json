@@ -13,8 +13,15 @@
     {
       "name": "Naga Finance",
       "symbol": "NAGA",
-      "address": "0x6a3e6259e5c7804eb23B8F579620fC7b2c83cd1d",
+      "address": "0x32A1bBda4Cb0706c93820A9D5FE6d310aaC111a4",
       "chainId": 97,
+      "decimals": 18
+    },
+    {
+      "name": "Naga Finance",
+      "symbol": "NAGA",
+      "address": "0xFd7F543b64257e8e83af5601756C28C611FA4Ae2",
+      "chainId": 4,
       "decimals": 18
     },
     {
