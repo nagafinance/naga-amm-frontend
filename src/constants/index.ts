@@ -4,13 +4,23 @@ import { AbstractConnector } from '@web3-react/abstract-connector'
 // import { bsc, fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
 import { injected, bsc } from '../connectors'
 // TODO
-export const ROUTER_ADDRESS = '0x30475092dCE56e98948025f979022153cbb79bb3'
+export const ROUTER_ADDRESS = process.env.REACT_APP_ROUTER_ADDRESS || '0x30475092dCE56e98948025f979022153cbb79bb3'
+export const FACTORY_ADDRESS = process.env.REACT_APP_FACTORY_ADDRESS || '0xc677E993abB6007174380559c451405186118C61'
+export const INIT_CODE = process.env.INIT_CODE || '0xb03db46ae24992d67fdd22a87d3f05c6d327d044318ff03144b6685a7c9e1903'
+
 
 // a list of tokens by chain
 type ChainTokenList = {
   readonly [chainId in ChainId]: Token[]
 }
 
+export const NAGA = new Token(
+  ChainId.BSCTESTNET,
+  '0x32A1bBda4Cb0706c93820A9D5FE6d310aaC111a4',
+  18,
+  'NAGA',
+  'Nagaswap Token'
+)
 export const DAI = new Token(ChainId.MAINNET, '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3', 18, 'DAI', 'Dai Stablecoin')
 export const BUSD = new Token(ChainId.MAINNET, '0xe9e7cea3dedca5984780bafc599bd69add087d56', 18, 'BUSD', 'Binance USD')
 export const USDT = new Token(ChainId.MAINNET, '0x55d398326f99059ff775485246999027b3197955', 18, 'USDT', 'Tether USD')
