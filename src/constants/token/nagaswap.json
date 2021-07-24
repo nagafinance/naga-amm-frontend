@@ -21,6 +21,13 @@
       "decimals": 18
     },
     {
+      "name": "NagaPower Finance",
+      "symbol": "pNAGA",
+      "address": "0x6eCB5197F04A87604558Bc62Bf921c02f323f6BA",
+      "chainId": 97,
+      "decimals": 18
+    },
+    {
       "name": "Naga Finance",
       "symbol": "NAGA",
       "address": "0xFd7F543b64257e8e83af5601756C28C611FA4Ae2",
