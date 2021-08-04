@@ -1,5 +1,5 @@
 {
-  "name": "pancakeswap",
+  "name": "nagaswap",
   "timestamp": "2020-08-25T15:41:29.665Z",
   "version": {
     "major": 1,
@@ -16,7 +16,7 @@
     {
       "name": "Naga Finance",
       "symbol": "NAGA",
-      "address": "0x32A1bBda4Cb0706c93820A9D5FE6d310aaC111a4",
+      "address": "0xA0931034f72C83333Efa4a586c583f345202Df0a",
       "chainId": 97,
       "decimals": 18
     },
